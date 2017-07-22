@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get started, clone the repo and install needed gems:
 
-Things you may want to cover:
+bundle install --without production
 
-* Ruby version
+Next, migrate the database:
 
-* System dependencies
+rails db:migrate
 
-* Configuration
+Finally, run the test suite to verify that everything is working correctly:
 
-* Database creation
+rails test
 
-* Database initialization
+If the test suite passes, you'll be able to run the app in a local server:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails server
